@@ -1,0 +1,48 @@
+#worth{
+    .container{
+        #worth__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 51px;
+            margin-top: 147px;
+
+            .worth__item{
+                box-shadow: 0px 0px 25px #ececec;  
+                transition: 0.5s all;
+                &:hover{
+                box-shadow: 0px 0px 25px #dddddd;  
+                transition: 0.5s all;
+                }
+
+                .worth__ico{
+                    background-size: cover;
+                    display: inline-block;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 93px;
+                    height: 93px;
+                    margin-top: 65px;
+                }
+                .worth__text{
+                    text-align: center;
+                    @include ROBOTO-R(18px);
+                    line-height: 24px;
+                    color: $FONT-COLOR-LIGHT-GRAY;
+                    margin-top: 26px;
+                    margin-bottom: 80px;
+                    padding: 0px 27px;
+                }
+                #worth__ico_1{
+                    background-image: url("ASSETS/IMG/WORTH/worth_ico_1.png");
+                }
+                #worth__ico_2{
+                    background-image: url("ASSETS/IMG/WORTH/worth_ico_2.png");
+                }
+                #worth__ico_3{
+                    background-image: url("ASSETS/IMG/WORTH/worth_ico_3.png");
+                }
+            }
+        }
+    }
+}
