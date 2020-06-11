@@ -4,8 +4,12 @@ $CONTAINER-PC: 1237px;
 $CONTAINER-TB: 768px;
 $CONTAINER-MB: 100%;
 
+a{
+    text-decoration: none;
+}
 .container{
     width: $CONTAINER-PC;
+    margin: auto;
 }
 @media (max-width: $MAX-FOR-TB){
     .container{
