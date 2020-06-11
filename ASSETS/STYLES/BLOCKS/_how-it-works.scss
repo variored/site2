@@ -1,0 +1,61 @@
+#how-it-works{
+    margin-top: 198px;
+    .container{
+        #how-it-works__frame{
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 541px auto;
+            .how-it-works__item{
+                display: inline-block;
+                #how-it-works__phone-bg{
+                    background-image: url("ASSETS/IMG/HOW_IT_WORKS/how-it-works_phone-bg.png");
+                    display: block;
+                    position: relative;
+                    left: -80px; 
+                    width: 541px;
+                    height: 734px;
+                }
+            }
+            #how-it-works__grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 8px;
+                .how-it-works__item-grid{
+                    text-align: center;
+
+                    .how-it-works__ico_1{
+                        background-image: url("ASSETS/IMG/HOW_IT_WORKS/how_it_works_ico_1.png");
+                    }
+                    .how-it-works__ico_2{
+                        background-image: url("ASSETS/IMG/HOW_IT_WORKS/how_it_works_ico_2.png");
+                    }
+                    .how-it-works__ico_3{
+                        background-image: url("ASSETS/IMG/HOW_IT_WORKS/how_it_works_ico_3.png");
+                    }
+                    .how-it-works__ico_4{
+                        background-image: url("ASSETS/IMG/HOW_IT_WORKS/how_it_works_ico_4.png");
+                    }
+                    .how-it-works__ico{
+                        background-size: cover;
+                        display: inline-block;
+                        width: 105px;
+                        height: 90px;
+                        margin-top: 47px;
+                        margin-bottom: 17px;
+                    }
+                    .how-it-works__text-main{
+                        @include ROBOTO-R(26px);
+                        color: $FONT-COLOR-DARK-GRAY;
+                    }
+                    .how-it-works__text-sub{
+                        @include ROBOTO-R(18px);
+                        line-height: 24px;
+                        color: $FONT-COLOR-LIGHT-GRAY;
+                        margin: 0px 15px;
+
+                    }
+                }
+            }
+        }
+    }
+}
