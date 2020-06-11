@@ -1,0 +1,41 @@
+#about-our-app{
+    margin-top: 80px;
+    color: $FONT-COLOR-DARK-GRAY;
+
+    .container{
+        .our-app-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;
+            column-gap: 5%;
+
+            .our-app-grid__item{
+
+                .our-app-grid__title{
+                    @include ROBOTO-R(30px);
+                    margin-top: 62px;
+                }
+                .our-app-grid__text{
+                    margin-top: 19px;
+                    text-align: justify;
+                    @include ROBOTO-R(18px);
+                    line-height: 24px;
+                }
+                .our-app-grid__button-GP{
+                    margin-top: 50px;
+                }
+                .about-our-app__phone-img{
+                    background-image: url("ASSETS/IMG/ABOUT_OUR_APP/about-our-app_phone-bg.png");
+                    background-size: cover;
+                    display: inline-block;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-68%);
+                    width: 295px;
+                    height: 458px;
+
+                }
+            }
+        }
+    }
+}
