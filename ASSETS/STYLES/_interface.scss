@@ -46,6 +46,11 @@ a{
     }
 } 
 //BUTTONS
+button{
+    &:hover{
+        filter: brightness(0.9);
+    }
+}
 .button-GP_blue{
     background-color: #b5e1f0;
 }
@@ -53,10 +58,6 @@ a{
     border-radius: 10px;
     height: 56px;
     width: 181px;
-
-    &:hover{
-        filter: brightness(0.9);
-    }
 
     .button-GP__ico{
         display: inline-block;
