@@ -1,6 +1,11 @@
+$SCREENSHOT-WIDTH: 314px;
+$SCREENSHOT-HEIGHT: 557px;
+
 #screenshots{
     margin-top: 65px;
     margin-bottom: 20px;
+    height: 1000px;
+    overflow: hidden;
     
     .container{
         .screenshots__grid{
@@ -23,9 +28,18 @@
             .screenshots__item{
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
                 display: block;
-                width: 314px;
-                height: 557px;
+                position: relative;
+                transition: 1s all;
+                width: $SCREENSHOT-WIDTH;
+                height: $SCREENSHOT-HEIGHT;
+                &:hover{
+                    width: $SCREENSHOT-WIDTH*1.4;
+                    height: $SCREENSHOT-HEIGHT*1.4;
+                    transition: 1s all;
+                    transform: translateY(-14%);
+                }
             }
         }
     }
