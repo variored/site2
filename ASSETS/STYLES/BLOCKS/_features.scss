@@ -1,0 +1,73 @@
+#template-features{
+    background-color: #f3f3f3;
+    padding-top: 65px;
+    padding-bottom: 80px;
+
+    .container{
+        #template-features__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2%;
+            margin-top: 85px;
+
+            .template-features__item{
+                text-align: center;
+                background-color: #fff;
+                box-shadow: 0px 0px 15px #ddd;
+
+                .template-features__ico-frame{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 215px;
+                    height: 215px;
+                    border: 7px solid #e0d6d6;
+                    border-radius: 50%;
+                    margin-top: 40px;
+
+                    &:hover{
+                        border-color: #12e3f6;
+                    }
+
+                    .template-features__ico_1{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_1.png");
+                    }
+                    .template-features__ico_2{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_2.png");
+                    }
+                    .template-features__ico_3{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_3.png");
+                    }
+                    .template-features__ico_4{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_4.png");
+                    }
+                    .template-features__ico_5{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_5.png");
+                    }
+                    .template-features__ico_6{
+                        background-image: url("ASSETS/IMG/FEATURES/features_ico_6.png");
+                    }
+                    .template-features__ico{
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 72px;
+                        margin-top: 40px;
+                    }
+                    .template-features__ico-text{
+                        @include ROBOTO-M(18px);
+                        line-height: 24px;
+                        color: $FONT-COLOR-DARK-GRAY;
+                        width: 50%;
+                        margin: auto;
+                    }
+                }
+                .template-features__text{
+                    margin: 35px 45px 55px 45px;
+                    @include ROBOTO-R(17px);
+                    line-height: 24px;
+                    color: $FONT-COLOR-LIGHT-GRAY;
+                }
+            }
+        }
+    }
+}
