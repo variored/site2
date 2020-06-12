@@ -1,4 +1,7 @@
+$SPIDESHOW_SPEED: 2s;
+
 #reviews{
+    padding-bottom: 40px;
 
     .reviews__slider{
         line-height: 0;
@@ -8,25 +11,84 @@
             font-size: 0px;
             display: table;
             position: relative;
-            transition: 2s all;
+            transition: $SPIDESHOW_SPEED ease left;
             left: 0;
-
-
-            #reviews__sliderline-item_1{
-                background-color: red;
-            }
-            #reviews__sliderline-item_2{
-                background-color: green;
-            }
-            #reviews__sliderline-item_3{
-                background-color: blue;
-            }
+            
             .reviews__sliderline-item{
                 display: inline-block;
                 margin: 0px;
-                
+
+                .reviews__container{
+                    padding: 50px;
+                    background-color: white;
+                }
+                //CONTENT
                 .container{
-                    height: 500px;
+                    margin-top: 90px;
+
+                    .reviews__grid{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 41px;
+
+                        .reviews__item{
+
+                            .reviews_profile{
+                                float: left;
+
+                                .reviews__photo_1{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_1.jpg");
+                                }
+                                .reviews__photo_2{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_2.jpg");
+                                }
+                                .reviews__photo_3{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_3.jpg");
+                                }
+                                .reviews__photo_4{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_4.jpg");
+                                }
+                                .reviews__photo_5{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_5.jpg");
+                                }
+                                .reviews__photo_6{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__photo_6.jpg");
+                                }
+                                .reviews__photo{
+                                    background-size: cover;
+                                    left: 0;
+                                    top: 0;
+                                    border-radius: 50%;
+                                    width: 105px;
+                                    height: 105px;
+                                }
+                                .reviews__lightstick{
+                                    background-image: url("ASSETS/IMG/REVIEWS/reviews__lightstick.png");
+                                    width: 70px;
+                                    height: 184px;
+                                    margin: auto;
+                                }
+                            }
+                            .reviews__profile-text-frame{
+                                overflow: hidden;
+                                text-align: center;
+                                padding-top: 90px;
+
+                                .reviews__text-name{
+                                    @include ROBOTO-R(30px);
+                                    line-height: 30px;
+                                    color: $FONT-COLOR-DARK-GRAY;
+                                }
+                                .reviews__text-comment{
+                                    @include ROBOTO-R(18px);
+                                    line-height: 24px;
+                                    text-align: justify;
+                                    color: $FONT-COLOR-LIGHT-GRAY;
+                                    margin: 25px 35px 0px 35px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -37,7 +99,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         position: relative;
         left: 50%;
-        top: -40px;
         transform: translateX(-50%);
         width: 60px;
 
@@ -46,11 +107,18 @@
             height: 16px;
             border-radius: 50%;
             background-color: #cdcdcd;
-            transition: 2s all;
+            transition: 2s background-color 0.2s transform 0.2s border;
+            border: 1px solid transparent;
+
+            &:hover{
+                border: 1px solid gray;
+                transition: 0.2s transform 0.2s border;
+
+            }
         }
         .reviews__indicator-item_active{
             background-color: #832cce;
-            transition: 2s all;
+            transition: 2s background-color;
         }
     }
 }
