@@ -46,6 +46,9 @@
                     .how-it-works__text-main{
                         @include ROBOTO-R(26px);
                         color: $FONT-COLOR-DARK-GRAY;
+                        &:hover{
+                            color: $COLOR-CYAN;
+                        }
                     }
                     .how-it-works__text-sub{
                         @include ROBOTO-R(18px);
