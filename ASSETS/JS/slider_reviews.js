@@ -17,6 +17,8 @@ for (let i = 0; i < childrenCount; i++){
     children[i].style.width = (100 / childrenCount) + "%";
 }
 
+setTimeout(NextPic, 0);
+setTimeout(NextPic, 0);
 let interval = setInterval(NextPic, SLIDER_SPEED);
 
 function NextPic(newIter){
