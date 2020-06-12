@@ -23,6 +23,10 @@
                 .how-it-works__item-grid{
                     text-align: center;
 
+                    &:hover > .how-it-works__text-main{
+                        color: $COLOR-CYAN;
+                    }
+
                     .how-it-works__ico_1{
                         background-image: url("ASSETS/IMG/HOW_IT_WORKS/how_it_works_ico_1.png");
                     }
@@ -46,9 +50,7 @@
                     .how-it-works__text-main{
                         @include ROBOTO-R(26px);
                         color: $FONT-COLOR-DARK-GRAY;
-                        &:hover{
-                            color: $COLOR-CYAN;
-                        }
+                        
                     }
                     .how-it-works__text-sub{
                         @include ROBOTO-R(18px);
