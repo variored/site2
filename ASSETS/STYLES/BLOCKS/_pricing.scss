@@ -1,0 +1,69 @@
+#pricing-plan{
+    .container{
+        #pricing-plan__grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 13px;
+            margin-top: 30px;
+            .pricing-plan__item{
+                box-shadow: 0px 0px 15px #ddd;
+                padding-bottom: 55px;
+
+                .pricing-plan__header{
+                    line-height: 0.15;
+                    font-size: 0px;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: $COLOR-BLUE;
+
+                    .pricing-plan__decore{
+                        background-image: url("ASSETS/IMG/PRICING/pricing__decore.png");
+                        background-position: bottom;
+                        background-repeat: no-repeat;
+                        width: 50px;
+                        height: 100%;
+                        display: inline-block;
+                        position: relative;
+                        top: 57px;
+                    }
+                    .pricing-plan__decore_left{
+                        left: 29px;
+                    }
+                    .pricing-plan__decore_right{
+                        right: 8px;
+                    }
+                    .pricing-plan__header-text{
+                        @include ROBOTO-R(30px);
+                        line-height: 44px;
+                        color: #fff;
+                        text-align: center; 
+                        padding: 20px 35px;
+                        display: inline-block;
+                    }
+                }
+                .pricing-plan__content{
+                    margin: 7px 34px 0px 34px;
+                    
+                    .pricing-plan__line{
+                        @include ROBOTO-R(16px);
+                        color : $FONT-COLOR-LIGHT-GRAY;
+                        text-align: center;
+                        border-bottom: 1px solid #c4c1be;
+                        padding: 19px 0px 11px 0px;
+                        margin: 0px;
+
+                        &:last-child{
+                            border-bottom: 0px solid transparent;
+                        }
+                    }
+                }
+                .pricing-pan__button{
+                    position: relative;
+                    lefT: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+  }

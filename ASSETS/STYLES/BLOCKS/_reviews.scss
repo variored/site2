@@ -117,7 +117,7 @@ $SPIDESHOW_SPEED: 2s;
             }
         }
         .reviews__indicator-item_active{
-            background-color: #832cce;
+            background-color: $COLOR-VIOLET;
             transition: 2s background-color;
         }
     }
