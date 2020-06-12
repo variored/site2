@@ -1,0 +1,32 @@
+#screenshots{
+    margin-top: 65px;
+    margin-bottom: 20px;
+    
+    .container{
+        .screenshots__grid{
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: auto;
+            .screenshots__item_1{
+                background-image: url("ASSETS/IMG/SCREENSHOTS/screenshoot_1.jpg");
+            }
+            .screenshots__item_2{
+                background-image: url("ASSETS/IMG/SCREENSHOTS/screenshoot_2.jpg");
+            }
+            .screenshots__item_3{
+                background-image: url("ASSETS/IMG/SCREENSHOTS/screenshoot_3.jpg");
+            }
+            .screenshots__item_4{
+                background-image: url("ASSETS/IMG/SCREENSHOTS/screenshoot_4.jpg");
+            }
+            .screenshots__item{
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                width: 314px;
+                height: 557px;
+            }
+        }
+    }
+}
