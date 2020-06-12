@@ -15,7 +15,6 @@ UpdateLinks(".Button_GP", GooglePlus);
 
 function UpdateLinks(_class, _link){
     let buttons = document.querySelectorAll(_class);
-    console.log(`buttons.length:${buttons}`);
     for (var i = 0; i < buttons.length; i++){
         buttons[i].href=_link;
     }
