@@ -1,4 +1,4 @@
-let SLIDER_SPEED = 10000;
+let SLIDER_SPEED = 20000;
 
 let sliderline = document.getElementById("reviews__sliderline");
 let childrenCount = sliderline.children.length;
@@ -17,18 +17,25 @@ for (let i = 0; i < childrenCount; i++){
     children[i].style.width = (100 / childrenCount) + "%";
 }
 
-setTimeout(NextPic, SLIDER_SPEED);
+let interval = setInterval(NextPic, SLIDER_SPEED);
 
-function NextPic(){
-    if (sliderIter == 2){
-        FirstPic();
+function NextPic(newIter){
+    if (newIter != undefined){
+        if (sliderIter != newIter){
+            sliderIter = newIter;
+            sliderline.style.left = (sliderIter * -100) + "%";
+        }
     }
     else{
-        sliderIter += 1;
-        sliderline.style.left = (sliderIter * -100) + "%";
+        if (sliderIter == 2){
+            FirstPic();
+        }
+        else{
+            sliderIter += 1;
+            sliderline.style.left = (sliderIter * -100) + "%";
+        }
     }
 
-    setTimeout(NextPic, SLIDER_SPEED);
     UpdateIndicators();
 }
 function FirstPic(){
@@ -54,4 +61,24 @@ function UpdateIndicators(){
         case 1: indicator2.classList.add("reviews__indicator-item_active"); break;
         case 2: indicator3.classList.add("reviews__indicator-item_active"); break;
     }
+}
+
+indicator1.onclick = indicator1_clicked;
+indicator2.onclick = indicator2_clicked;
+indicator3.onclick = indicator3_clicked;
+
+function indicator1_clicked() {
+    clearInterval(interval);
+    interval = setInterval(NextPic, SLIDER_SPEED);
+    NextPic(0); 
+}
+function indicator2_clicked() {
+    clearInterval(interval);
+    interval = setInterval(NextPic, SLIDER_SPEED);
+    NextPic(1); 
+}
+function indicator3_clicked() {
+    clearInterval(interval);
+    interval = setInterval(NextPic, SLIDER_SPEED);
+    NextPic(2); 
 }
