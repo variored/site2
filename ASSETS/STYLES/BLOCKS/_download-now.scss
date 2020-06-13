@@ -1,0 +1,35 @@
+#download{
+    background-color: $COLOR-BLUE;
+
+    .container{
+        #download__grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .download__item{
+                color: #fff;
+
+                #download__woman-bg{
+                    width: 454px;
+                    height: 566px;
+                    background-image: url("ASSETS/IMG/DOWNLOAD-NOW/download-now__woman-bg.png");
+                    background-position: center;
+                }
+                #download__text{
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    .download__text_title{
+                        @include ROBOTO-R(47px);
+                        margin-bottom: 45px;
+                    }
+                    .download__text_sub{
+                        @include ROBOTO-R(18px);
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
