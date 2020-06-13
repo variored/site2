@@ -49,19 +49,19 @@ function FirstPic(){
     UpdateIndicators();
 }
 function UpdateIndicators(){
-    if (indicator1.classList.contains("reviews__indicator-item_active")){
-        indicator1.classList.remove("reviews__indicator-item_active");
+    if (indicator1.classList.contains("indicator-item_active")){
+        indicator1.classList.remove("indicator-item_active");
     }
-    if (indicator2.classList.contains("reviews__indicator-item_active")){
-        indicator2.classList.remove("reviews__indicator-item_active");
+    if (indicator2.classList.contains("indicator-item_active")){
+        indicator2.classList.remove("indicator-item_active");
     }
-    if (indicator3.classList.contains("reviews__indicator-item_active")){
-        indicator3.classList.remove("reviews__indicator-item_active");
+    if (indicator3.classList.contains("indicator-item_active")){
+        indicator3.classList.remove("indicator-item_active");
     }
     switch (sliderIter){
-        case 0: indicator1.classList.add("reviews__indicator-item_active"); break;
-        case 1: indicator2.classList.add("reviews__indicator-item_active"); break;
-        case 2: indicator3.classList.add("reviews__indicator-item_active"); break;
+        case 0: indicator1.classList.add("indicator-item_active"); break;
+        case 1: indicator2.classList.add("indicator-item_active"); break;
+        case 2: indicator3.classList.add("indicator-item_active"); break;
     }
 }
 
