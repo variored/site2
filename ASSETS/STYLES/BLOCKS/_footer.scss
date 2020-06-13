@@ -1,0 +1,43 @@
+footer{
+    background-color: $COLOR-BLUE;
+    padding-bottom: 50px;
+    .container{
+        padding-top: 50px;
+        .ready-to-stary{
+            margin: 0px 200px;
+            text-align: center;
+            color: #fff;
+            @include ROBOTO-R(48px);
+            line-height: 60px;
+        }
+        form{
+            margin: auto;
+            margin-top: 40px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto 50px;
+            width: 400px;
+            border-radius: 50px;
+            overflow: hidden;
+            padding-right: 15px;
+
+            #form__search{
+                padding: 15px 35px;
+                @include ROBOTO-R(25px);
+                border: 0px;
+            }
+            #form__submit{
+                background-image: url("ASSETS/IMG/FOOTER/form__search_ico.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 100%;
+                background-color: #fff;
+                border: 0px;
+                &:hover{
+                    background-image: url("ASSETS/IMG/FOOTER/form__search_ico_hover.png");
+                }
+            }
+        }
+    }
+}
