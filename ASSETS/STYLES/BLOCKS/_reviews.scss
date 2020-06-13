@@ -93,32 +93,9 @@ $SPIDESHOW_SPEED: 2s;
             }
         }
     }
-    
     .reviews__indicator-frame{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        width: 60px;
-
-        .reviews__indicator-item{
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: #cdcdcd;
-            transition: 2s background-color 0.2s transform 0.2s border;
-            border: 1px solid transparent;
-
-            &:hover{
-                border: 1px solid gray;
-                transition: 0.2s transform 0.2s border;
-
-            }
-        }
-        .reviews__indicator-item_active{
-            background-color: $COLOR-VIOLET;
-            transition: 2s background-color;
-        }
     }
 }
