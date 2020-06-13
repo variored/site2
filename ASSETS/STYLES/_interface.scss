@@ -38,6 +38,35 @@ $COLOR-VIOLET: #832cce;
     }
 }
 
+.vertical-menu{
+    .vertical-menu__item{
+
+        .vertical-menu__title{
+            background-color: #f3f3f3;
+            @include ROBOTO-R(20px);
+            line-height: 22px;
+            color: #464545;
+            padding: 34px 24px;
+        }
+        .vertical-menu__content{
+            @include ROBOTO-R(16px);
+            line-height: 22px;
+            color: #545351;
+            height: 0px;
+            padding: 0px 50px 0px 1px;
+            margin-bottom: 0px;
+            overflow: hidden;
+            transition: .4s all;
+        }
+        .vertical-menu__content_active{
+            height: 150px;
+            margin-bottom: 23px;
+            padding: 34px 50px 5px 1px;
+            transition: .4s all;
+        }
+    }
+}
+
 //COMMON
 a{
     text-decoration: none;
