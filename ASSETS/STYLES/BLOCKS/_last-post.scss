@@ -1,0 +1,46 @@
+#last-post{
+    background-color: #f3f3f3;
+    padding-bottom: 45px;
+
+    .container{
+        .last-post__content-frame{
+            background-color: #fff;
+            padding: 17px;
+            margin-top: 45px;
+
+            .last-post__grid{
+                display: grid;
+                grid-template-columns: 621px auto;
+                .last-post__item_right{
+                    background-image: url("ASSETS/IMG/LAST-POST/last-post_bg.jpg");
+                    background-position: top;
+                    background-repeat: no-repeat;
+                }
+                .last-post__item{
+
+                    .last-post__text{
+                        padding-bottom: 60px;
+                        padding-left: 40px;
+
+                        .last-post__text-title{
+                            @include ROBOTO-M(30px);
+                            color: $FONT-COLOR-DARK-GRAY;
+                        }
+                        .last-post__text-date{
+                            @include ROBOTO-R(18px);
+                            color: $COLOR-CYAN;
+                            margin-top: 20px;
+                        }
+                        .last-post__text-content{
+                            @include ROBOTO-R(18px);
+                            line-height: 22px;
+                            color: $FONT-COLOR-LIGHT-GRAY;
+                            margin-top: 35px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
