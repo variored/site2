@@ -10,6 +10,8 @@ let SingUp_Business    =    "https://myaccount.google.com/profile";
 let SingUp_Premium     =    "https://myaccount.google.com/profile";
 let SingUp_Extra       =    "https://myaccount.google.com/profile";
 
+let LastBlog           =    "https://crhscountyline.com/wp-content/uploads/2020/03/Capture.png";
+
 
 //LINKS-------/////////////////////////////////////////////////////
 UpdateLinks(".Button_GooglePlay", GooglePlay);
@@ -21,6 +23,7 @@ UpdateLinks(".Button_SING_UP_S", SingUp_Standart);
 UpdateLinks(".Button_SING_UP_B", SingUp_Business);
 UpdateLinks(".Button_SING_UP_P", SingUp_Premium);
 UpdateLinks(".Button_SING_UP_E", SingUp_Extra);
+UpdateLinks(".Button_last-blog", LastBlog);
 
 function UpdateLinks(_class, _link){
     let buttons = document.querySelectorAll(_class);
