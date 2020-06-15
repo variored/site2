@@ -14,12 +14,37 @@
             width: 155px;
             height: 100px;
         }
+        //MOBILE
+        .home__top-mobile-menu{
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background-color: #f7f7f7;
+            z-index: 10;
+            top: -60px;
+            transition: .4s all;
+            #home__burger-menu-button_open{
+                background-image: url("ASSETS/IMG/HOME/menu-burger.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15px;
+                width: 50px;
+                height: 50px;
+            }
+        }
         //TOP-MENU
         .home__top-menu{
             display: inline-block;
             position: relative;
             left: 293px;
             top: -76px;
+            
+            #home__burger-title{
+                display: none;
+            }
             //NAVIGATION
             .home__nav{
                 display: inline-block;
@@ -156,11 +181,16 @@
 @media (max-width: $MAX-FOR-MB){ 
     #home{
         .container{
+            .home__top-mobile-menu_active{
+                top: 0%;
+                transition: .4s all;
+            }
             .home__top-menu{
                 position: fixed;
                 width: 243px;
                 background-color: #fff;
-                left: 0px;
+                left: -150%;
+                transition: .4s all;
                 top: 0px;
                 height: 100%;
 
@@ -175,6 +205,7 @@
                     &:hover{ background-image: url("ASSETS/IMG/HOME/menu-burger-row_hover.png"); }
                 }
 
+                
                 #home__burger-title{
                     background-color: #f7f7f7;
                     height: 47px;
@@ -251,7 +282,10 @@
                     }
 
                 }
-
+            }
+            .home__top-menu_active{
+                left: 0px;
+                transition: .4 left;
             }
             .home__message{
                 padding-left: 15px;
