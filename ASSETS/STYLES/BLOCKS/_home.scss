@@ -124,3 +124,141 @@
         }
     }
 }
+@media (max-width: $MAX-FOR-TB){ 
+    #home{
+        .container{
+            .home__top-menu{
+                left: 30px;
+                top: -60px;
+
+                .home__social{
+                    display: block;
+                    margin-left: 0px;
+                    top: 53px;
+
+                    .social__item{
+                        margin-right: 7px;
+                    }
+
+                }
+
+            }
+            .home__message{
+                padding-left: 15px;
+            }
+            .home__bg-phone{
+                margin-top: -121px;
+                margin-right: 14px;
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){ 
+    #home{
+        .container{
+            .home__top-menu{
+                position: fixed;
+                width: 243px;
+                background-color: #fff;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+
+                .home__burger-button{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url("ASSETS/IMG/HOME/menu-burger-row.png");
+                    &:hover{ background-image: url("ASSETS/IMG/HOME/menu-burger-row_hover.png"); }
+                }
+                .home__burger-button_active{
+                    background-image: url("ASSETS/IMG/HOME/menu-burger-row.png");
+                    &:hover{ background-image: url("ASSETS/IMG/HOME/menu-burger-row_hover.png"); }
+                }
+
+                #home__burger-title{
+                    background-color: #f7f7f7;
+                    height: 47px;
+                    display: grid;
+                    grid-template-columns: 40px auto;
+                    
+                    .home__burger-button-text{
+                        color: $FONT-COLOR-LIGHT-GRAY;
+                        @include ROBOTO-M(14px);
+                        text-transform: uppercase;
+                        line-height: 47px;
+                        text-align: center;
+                        margin-right: 40px;
+                    }
+                }
+
+                
+
+                .nav{
+                    display: block;
+                    padding-top: 30px;
+                    margin: 15px;
+
+                    .nav__item{
+                        display: block;
+                        text-align: center;
+                        margin: 15px 0px;
+                        font-size: 20px;
+                        color: $FONT-COLOR-LIGHT-GRAY;
+                        @include ROBOTO-M(14px);
+                        text-transform: uppercase;
+                        
+                    }
+                }
+
+                .home__social{
+                    display: inline-block;
+                    position: relative;
+                    top: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-top: 1px solid #eee;
+                    padding-top: 15px;
+                
+
+                    .social__item{
+                        margin-left: 0px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                    #social__fb{
+                        background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__FB.png");
+                        &:hover{
+                            background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__FB_hover.png");
+                        }
+                    }
+                    #social__tw{
+                        background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__twitter.png");
+                        &:hover{
+                            background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__twitter_hover.png");
+                        }
+                    }
+                    #social__pc{
+                        background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__picasa.png");
+                        &:hover{
+                            background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__picasa_hover.png");
+                        }
+                    }
+                    #social__gp{
+                        background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__google-plus.png");
+                        &:hover{
+                            background-image: url("ASSETS/IMG/HOME/SOCIAL/gray__google-plus_hover.png");
+                        }
+                    }
+
+                }
+
+            }
+            .home__message{
+                padding-left: 15px;
+            }
+            .home__bg-phone{
+                display: none;
+            }
+        }
+    }
+}
