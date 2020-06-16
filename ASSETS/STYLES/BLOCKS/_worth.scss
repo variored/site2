@@ -5,6 +5,7 @@
             grid-template-columns: repeat(3, 1fr);
             column-gap: 51px;
             margin-top: 147px;
+            width: 100%;
 
             .worth__item{
                 
@@ -37,6 +38,38 @@
                 #worth__ico_3{
                     background-image: url("ASSETS/IMG/WORTH/worth_ico_3.png");
                 }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-TB){
+    #worth{
+        .container{
+            #worth__grid{
+                width: 100%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 40%;
+                row-gap: 35px;
+                justify-content: center;
+                column-gap: 51px;
+                margin-top: 147px;
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){
+    #worth{
+        .container{
+            #worth__grid{
+                width: 100%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 80%;
+                row-gap: 35px;
+                justify-content: center;
+                column-gap: 51px;
+                margin-top: 147px;
             }
         }
     }
