@@ -1,38 +1,4 @@
-        <!--WORTH-->
-            <section id="worth" class="block">
-                <div class="container">
-                    <!--GRID-->
-                    <div id="worth__grid">
-                        <!--ITEM-->
-                        <div class="worth__item item-shadow">
-                            <div id="worth__ico_1" class="worth__ico"></div>
-                            <div class="worth__text">
-                                Lorem ipsum dolor sit amet consectetur, 
-                                adipisicing elit. Aliquam expedita impedit 
-                                quasi a voluptas sint.
-                            </div>
-                        </div>
-                        <!--ITEM-->
-                        <div class="worth__item item-shadow">
-                            <div id="worth__ico_2" class="worth__ico"></div>
-                            <div class="worth__text">
-                                Lorem ipsum dolor sit amet consectetur, 
-                                adipisicing elit. Aliquam expedita impedit 
-                                quasi a voluptas sint.
-                            </div>
-                        </div>
-                        <!--ITEM-->
-                        <div class="worth__item item-shadow">
-                            <div id="worth__ico_3" class="worth__ico"></div>
-                            <div class="worth__text">
-                                Lorem ipsum dolor sit amet consectetur, 
-                                adipisicing elit. Aliquam expedita impedit 
-                                quasi a voluptas sint.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        
 
             <!--ABOUt-OUR-APP-->
             <section id="about-our-app" class="block">
