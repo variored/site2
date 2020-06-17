@@ -63,3 +63,40 @@
         }
     }
 }
+@media(max-width: $MAX-FOR-TB){
+    #how-it-works{
+        .container{
+            #how-it-works__frame{
+                margin-top: 80px;
+                display: grid;
+                grid-template-columns: 300px auto;
+                .how-it-works__item_phone{
+                    position: relative;
+                    #how-it-works__phone-bg{
+                        position: absolute;
+                        left: 0px; 
+                        bottom: 0px;
+                        width: 300px;
+                        background-position: bottom;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: $MAX-FOR-MB){
+    #how-it-works{
+        .container{
+            #how-it-works__frame{
+                margin-top: 80px;
+                display: grid;
+                grid-template-columns: 1fr;
+                .how-it-works__item_phone{
+                    display: none;
+                }
+            }
+        }
+    }
+}
