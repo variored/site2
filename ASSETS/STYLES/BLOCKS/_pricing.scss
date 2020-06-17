@@ -70,3 +70,36 @@
         }
     }
   }
+  @media (max-width: $MAX-FOR-TB){
+    #pricing-plan{
+        background-color: #f3f3f3;
+        padding-bottom: 80px;
+    
+        .container{
+            #pricing-plan__grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 30px;
+                
+            }
+        }
+      }
+  }
+  @media (max-width: $MAX-FOR-MB){
+    #pricing-plan{
+        background-color: #f3f3f3;
+        padding-bottom: 80px;
+    
+        .container{
+            #pricing-plan__grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 30px;
+                .pricing-plan__item{
+                    margin: 0px 40px;
+                }
+            }
+        }
+      }
+  }
