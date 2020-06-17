@@ -1,5 +1,5 @@
-$SCREENSHOT-WIDTH: 314px;
-$SCREENSHOT-HEIGHT: 557px;
+$SCREENSHOT-WIDTH: 246px;
+$SCREENSHOT-HEIGHT: 446px;
 
 #screenshots{
     margin-bottom: 20px;
@@ -11,7 +11,11 @@ $SCREENSHOT-HEIGHT: 557px;
             margin-top: 60px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            column-gap: auto;
+            align-self: center;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
             .screenshots__item_1{
                 background-image: url("ASSETS/IMG/SCREENSHOTS/screenshoot_1.jpg");
             }
@@ -39,6 +43,37 @@ $SCREENSHOT-HEIGHT: 557px;
                     transition: 1s all;
                     transform: translateY(-14%);
                 }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-TB){
+    #screenshots{
+        .container{
+            .screenshots__grid{
+                .screenshots__item{
+                    width: $SCREENSHOT-WIDTH/2;
+                    height: $SCREENSHOT-HEIGHT/2;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){
+    #screenshots{
+        .container{
+            .screenshots__grid{
+                .screenshots__item{
+                    width: $SCREENSHOT-WIDTH/3;
+                    height: $SCREENSHOT-HEIGHT/3;
+                    &:hover{
+                        width: $SCREENSHOT-WIDTH;
+                        height: $SCREENSHOT-HEIGHT;
+                        transition: 1s all;
+                        transform: translateY(-14%);
+                    }
+                }
+                
             }
         }
     }

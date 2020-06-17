@@ -6,28 +6,7 @@
 
             
 
-            <!--SCREENSHOTS-->
-            <section id="screenshots" class="block">
-                <div class="container">
-                    <!--TITLE-->
-                    <div class="block-title">
-                        <div class="block-title__title">App Screenshot</div>
-                        <div class="block-title__underline"></div>
-                        <div class="block-title__sub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Sed hic at, quisquam adipisci iste cupiditate harum totam 
-                             nisi excepturi exercitationem?
-                        </div>
-                    </div>
-                    <!--GRID-->
-                    <div class="screenshots__grid">
-                        <div class="screenshots__item screenshots__item_1"></div>
-                        <div class="screenshots__item screenshots__item_2"></div>
-                        <div class="screenshots__item screenshots__item_3"></div>
-                        <div class="screenshots__item screenshots__item_4"></div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!--REVIEWS-->
             <section id="reviews" class="block">
