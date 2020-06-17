@@ -180,6 +180,7 @@
 }
 @media (max-width: $MAX-FOR-MB){ 
     #home{
+        padding-top: 50px;
         .container{
             .home__top-mobile-menu_active{
                 top: 0px;

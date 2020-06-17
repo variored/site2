@@ -1,5 +1,5 @@
 $MAX-FOR-TB: 1237px;
-$MAX-FOR-MB: 768px;
+$MAX-FOR-MB: 767px;
 $CONTAINER-PC: 1237px;
 $CONTAINER-TB: 768px;
 $CONTAINER-MB: 100%;
@@ -73,9 +73,7 @@ a{
 .container{
     width: $CONTAINER-PC;
     margin: auto;
-    border: 1px solid black;
 }
-
 //BLOCK
 .block{
     padding-top: 80px;
@@ -145,6 +143,7 @@ button{
     border-radius: 10px;
     height: 56px;
     width: 181px;
+    background-color: #faf9f9;
 
     .button-GP__ico{
         display: inline-block;
@@ -175,5 +174,8 @@ button{
 @media (max-width: $MAX-FOR-MB){
     .container{
         width: $CONTAINER-MB;
+    }
+    .block-title{
+        width: 90%;
     }
 }

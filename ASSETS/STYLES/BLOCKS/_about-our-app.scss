@@ -38,3 +38,65 @@
         }
     }
 }
+@media (max-width: $MAX-FOR-TB){
+    #about-our-app{
+        color: $FONT-COLOR-DARK-GRAY;
+    
+        .container{
+            .our-app-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 50px;
+                column-gap: 5%;
+                margin: 0px 15px;
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-TB){
+    #about-our-app{
+
+        .container{
+            .our-app-grid{
+                margin: 39px 15px;
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){
+    #about-our-app{
+    
+        .container{
+            .our-app-grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+                column-gap: 5%;
+                margin: 39px 15px;
+                
+
+                .our-app-grid__item_right{
+                    grid-row: 1/2;
+                    height: 200px;
+                    width: 100%;
+                    .about-our-app__phone-img{
+                        transform: unset;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-attachment: fixed;
+                    }
+                    
+                }
+
+                .our-app-grid__item_left{
+                    .our-app-grid__button-GP{
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

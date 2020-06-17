@@ -99,3 +99,39 @@ $SPIDESHOW_SPEED: 2s;
         transform: translateX(-50%);
     }
 }
+@media (max-width: $MAX-FOR-MB){
+    #reviews{
+    
+        .reviews__slider{
+    
+            #reviews__sliderline{
+                
+                .reviews__sliderline-item{
+                    //CONTENT
+                    .container{
+    
+                        .reviews__grid{
+                            grid-template-columns: 1fr;
+    
+                            .right_review{
+                                display: none;
+                            }
+                            .reviews__item{
+
+                                .reviews__profile-text-frame{
+    
+                                    .reviews__text-name{
+                                        text-align: left;
+                                    }
+                                    .reviews__text-comment{
+                                        margin: 0px 75px 0px 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
