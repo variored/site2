@@ -37,6 +37,56 @@ $COLOR-VIOLET: #832cce;
     }
 }
 
+.button-top{
+    opacity: 0;
+    right: 0px;
+    transition: 1.4s all;
+}
+.button-top_active{
+    opacity: 1;
+    right: 60px;
+    transition: 1.4s all;
+}
+#button-top{
+    position: fixed;
+    bottom: 60px;
+    width: 70px;
+    height: 70px;
+    background-color: $COLOR-VIOLET;
+    border-radius: 50%;
+
+    #row{
+        width: 2px;
+        height: 25px;
+        border: 1px solid #fff;
+        background-color: #fff;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2px;
+
+        &:after{
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-left: 4px solid #fff;
+            border-top: 4px solid #fff;
+            border-radius: 2px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+
+        }
+    }
+
+    &:hover{
+        filter: brightness(1.1);
+        cursor: pointer;
+    }
+}
+
 .vertical-menu{
     .vertical-menu__item{
 
