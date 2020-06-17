@@ -176,10 +176,8 @@ button{
 @media (max-width: $MAX-FOR-MB){
     .container{
         width: $CONTAINER-MB;
-        
-        .block-title{
-            width: 90%;
-        }
-
+    }
+    .block-title{
+        width: 90%;
     }
 }
