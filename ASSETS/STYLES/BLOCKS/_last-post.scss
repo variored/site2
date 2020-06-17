@@ -44,3 +44,49 @@
         }
     }
 }
+@media (max-width: $MAX-FOR-TB){
+    #last-post{
+        background-color: #f3f3f3;
+        padding-bottom: 45px;
+    
+        .container{
+            .last-post__content-frame{
+                background-color: #fff;
+                padding: 17px;
+                margin-top: 45px;
+    
+                .last-post__grid{
+                    display: grid;
+                    grid-template-columns: 310px auto;
+                    
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){
+    #last-post{
+        background-color: #f3f3f3;
+        padding-bottom: 45px;
+    
+        .container{
+            .last-post__content-frame{
+                background-color: #fff;
+                padding: 17px;
+                margin-top: 45px;
+    
+                .last-post__grid{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 35px;
+                
+                    .last-post__item_right{
+                        height: 300px;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}
