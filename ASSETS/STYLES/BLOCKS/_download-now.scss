@@ -33,3 +33,39 @@
         }
     }
 }
+@media (max-width: $MAX-FOR-TB){
+    #download{
+        .container{
+            #download__grid{
+                .download__item{
+                    position: relative;
+                    #download__woman-bg{
+                        width: 317px;
+                        height: 396px;
+                        position: absolute;
+                        bottom: 0px;
+                        border: 1px solid red;
+                        background-position: bottom;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-FOR-MB){
+    #download{
+        padding-bottom: 60px;
+        .container{
+            #download__grid{
+                grid-template-columns: 1fr;
+                .download__item{
+                    margin: 15px;
+                    #download__woman-bg{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

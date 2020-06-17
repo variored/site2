@@ -1,48 +1,4 @@
-        
-
             
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            <!--DOWNLOAD-THE-APP-NOW-->
-            <section id="download" class="block">
-                <div class="container">
-                    <!--GRID-->
-                    <div id="download__grid">
-                        <!--ITEM-->
-                        <div id="download__item_left" class="download__item">
-                            <div id="download__woman-bg"></div>
-                        </div>
-                        <!--ITEM-->
-                        <div id="download__item_right" class="download__item">
-                            <div id="download__text">
-                                <div class="download__text_title">
-                                    Download The App Now
-                                </div>
-                                <div class="download__text_sub">
-                                    Lorem ipsum dolor sit amet consectetur, 
-                                    adipisicing elit. Optio nulla ex dolorem 
-                                    modi assumenda ea unde id. Saepe, distinctio 
-                                    doloremque accusamus, accusantium officiis 
-                                    quam commodi necessitatibus ea optio laudantium
-                                     cum dolor perspiciatis reprehenderit porro 
-                                     quidem ullam reiciendis delectus. Fugit, nemo.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!--LATEST-BLOG-POST-->
             <section id="last-post" class="block">
