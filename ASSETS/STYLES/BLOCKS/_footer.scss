@@ -41,3 +41,20 @@ footer{
         }
     }
 }
+@media (max-width: $MAX-FOR-MB){
+    footer{
+        .container{
+            .ready-to-stary{
+                margin: 0px auto;
+                @include ROBOTO-R(30px);
+                line-height: 60px;
+            }
+            form{
+                width: 60%;
+                #form__search{
+                    @include ROBOTO-R(15px);
+                }
+            }
+        }
+    }
+}
