@@ -1,5 +1,5 @@
 $MAX-FOR-TB: 1237px;
-$MAX-FOR-MB: 768px;
+$MAX-FOR-MB: 767px;
 $CONTAINER-PC: 1237px;
 $CONTAINER-TB: 768px;
 $CONTAINER-MB: 100%;
@@ -176,5 +176,10 @@ button{
 @media (max-width: $MAX-FOR-MB){
     .container{
         width: $CONTAINER-MB;
+        
+        .block-title{
+            width: 90%;
+        }
+
     }
 }

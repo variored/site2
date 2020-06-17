@@ -1,0 +1,44 @@
+[33m6d1e473[m[33m ([m[1;36mHEAD[m[33m)[m ADAPTIVE #worth 4 PC/TB/MB
+[33madce876[m ADAPTIVE #Home 4 PC/TB/MB
+[33mf344301[m add open/close Burget-menu JS
+[33m4102e80[m add OPENED Burger-menu template
+[33m56b7806[m[33m ([m[1;31mgithub/master[m[33m)[m add YA metrik
+[33m2c4a98e[m add #footer WITHOUT adaptive
+[33mfba6195[m add #partners WITHOUT adaptive
+[33md986d08[m add #last-post WITHOUT adaptive
+[33m0c888bd[m DOM @last-post
+[33m486ea3b[m add #download-now WIRHOUT adaptive
+[33m5d1f3ae[m DOM #download-now
+[33mbc275dd[m add common padding to block
+[33m87acb58[m add #questions WITHOUT adaptive
+[33m3871be7[m add padding-bottom to #pricing
+[33m7c4c81e[m DOM #questions
+[33mf921d1f[m common .slider-indicator
+[33m7ece736[m add bg 4 #pricing
+[33m2af60ee[m add common :hover box-shadow anim
+[33m7d7d76b[m add #pricing WITHOUT adaptive
+[33mdc10049[m DOM #Pricing
+[33m1114e8d[m common :hover style for all buttons
+[33m48e8810[m start slider animation whe load page
+[33m8fd39e1[m new animations on #features, #how-it-works
+[33me456984[m add reviews WITHOUT adaptive
+[33m8a837ca[m add slider js
+[33m3b11103[m Screensots zoomer
+[33m7866904[m add Screenshots WITHOUT adaptive
+[33mb0d65b9[m interactive text in How-It-Works
+[33me6017e7[m add Features WITHOUT adaptive
+[33mef8dad8[m DOM features
+[33m6993db8[m add How-it-works WITHOUT adaptive
+[33m2457628[m DOM how-it-works
+[33m9b7b18d[m add Config.js file
+[33mf7b3d46[m add About-our-app WITHOUT adaptive
+[33m9f24c73[m DOM about-our-app
+[33md40aa0f[m add worth WITHOUT adaptive
+[33md1ac32c[m DOM worth
+[33mbbd624d[m home WITHOUT adaptive
+[33m62e22a0[m add condenced font Roboto 400 700
+[33m1b7504f[m DOM home
+[33m0f54744[m adaptive rules for container
+[33mf32f68b[m add google fonts
+[33m3b0d90c[m HTML main DOM
+[33mfa747e2[m init work tree

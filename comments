@@ -1,55 +1,6 @@
         
 
-            <!--ABOUt-OUR-APP-->
-            <section id="about-our-app" class="block">
-                <div class="container">
-                    <!--TITLE-->
-                    <div class="block-title">
-                        <div class="block-title__title">ABOUT OUR APP</div>
-                        <div class="block-title__underline"></div>
-                        <div class="block-title__sub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Sed hic at, quisquam adipisci iste cupiditate harum totam 
-                             nisi excepturi exercitationem?
-                        </div>
-                    </div>
-                    <!--GRID-->
-                    <div class="about-our-app__grid our-app-grid">
-                        <!--LEFT-->
-                        <div class="our-app-grid__item">
-                            <div class="our-app-grid__title">
-                                All Your Activities In One Place
-                            </div>
-                            <div class="our-app-grid__text">
-                                Lorem ipsum, dolor sit amet consectetur 
-                                adipisicing elit. Quos magnam pariatur 
-                                totam veniam. Totam repudiandae et nulla
-                                 modi magnam, veritatis beatae libero 
-                                 numquam dignissimos commodi, quos architecto
-                                  ad amet? Dignissimos quia omnis at consectetur
-                                   pariatur, placeat dolorem quae debitis
-                                   <br><br> 
-                                   aliquam error dolores hic rem eligendi 
-                                   tempore ullam suscipit veritatis nihil 
-                                   culpa temporibus sapiente mollitia. Quidem!
-                            </div>
-                            <a target="_blank" href="#" class="Button_GooglePlay">
-                                <button class="our-app-grid__button-GP button-GP button-GP_blue">
-                                    <span class="button-GP__ico"></span>
-                                    <span class="button-GP__text">
-                                        <span class="button-GP__GET-ON">GET ON</span><br>
-                                        <span class="button-GP__GP">Google play</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                        <!--RIGHT-->
-                        <div class="our-app-grid__item">
-                            <div class="about-our-app__phone-img"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!--HOW-IT-WORKS-->
             <section id="how-it-works" class="block">
